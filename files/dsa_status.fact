@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STATUS=`/opt/ds_agent/dsa_query -c GetComponentInfo`
+STATUS=`sudo /opt/ds_agent/dsa_query -c GetComponentInfo`
 JSON="{"
 while IFS=':' read -ra COMP; do
   i=0
